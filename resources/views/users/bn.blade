@@ -1,0 +1,17 @@
+@extends('layout')
+	@section('content')
+			<h1>{{ $title }}</h1>	
+		@empty($users)
+		    	<p>No hay usuarios registrados.</p>
+		@else
+		    <ul class="col-12">
+		    	<div class="row">
+		        @foreach ($users as $user)
+		        	<div class="col-6">
+		            <li><a>{{ $user }}</a></li>
+		        	</div>
+		        @endforeach
+		        </div>
+		    </ul>
+		@endempty
+	@endsection
