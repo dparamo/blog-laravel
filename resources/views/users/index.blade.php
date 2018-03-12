@@ -2,7 +2,7 @@
 	@section('content')
 			<h1>{{ $title }}</h1>	
 		@empty($users)
-		    	<p>No hay usuarios registrados.</p>
+		    	<p>No hay usuarios registrados. nuevo commit</p>
 		@else
 		    <ul class="col-12">
 		    	<div class="row">
